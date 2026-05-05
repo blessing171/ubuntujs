@@ -50,3 +50,21 @@ if (!Number.isInteger(size) || size <= 0) {
 
 
 
+function add(a, b) {
+  return a + b;
+}
+
+const a = Number(process.argv[2]);
+const b = Number(process.argv[3]);
+
+console.log(add(a, b));
+
+function factorial(n) {
+  if (isNaN(n)) return 1;
+  if (n <= 1) return 1;
+  return n * factorial(n - 1);
+}
+
+const n = Number(process.argv[2]);
+
+console.log(factorial(n));
